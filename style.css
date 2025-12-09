@@ -1,0 +1,65 @@
+body {
+    font-family: "Science Gothic", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #0E1116;
+    color: #E6EBF0; 
+}
+
+h1 {
+    color: #A9B4C2;
+}
+
+#instrucoes {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #1C2028;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo do tabuleiro */
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(8, 60px); /* 8 colunas de 60px cada */
+    grid-template-rows: repeat(8, 60px); /* 8 linhas de 60px cada */
+    border: 2px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo das casas do tabuleiro */
+.casa {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px; /*Para as peças de xadrez */
+    cursor: pointer;
+    user-select: none; /* Evita seleção de texto */
+}
+
+/* Casa clara */
+.clara {
+    background-color: #F0D9B5;
+}
+
+/* Casa escura */
+.escura {
+    background-color: #B58863;
+}
+
+/* Estilo para destacar movimentos possíveis */
+.possivel-movimento {
+    background-color: rgba(0, 255, 0, 0.5);
+    border: 2px solid green;
+}
+
+
+.selecionada {
+    border: 3px solid blue;
+    box-shadow: inset 0 0 10px rgba(0, 0, 255, 0.7);
+}
